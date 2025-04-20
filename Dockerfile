@@ -15,8 +15,7 @@ COPY ./src /code
 # Install the Python project requirements
 RUN pip install -r /tmp/requirements.txt
 
-RUN python manage.py collectstatic --noinput
-# whitenoise -> s3
+
 
 # set the Django default project name
 ARG PROJ_NAME="cfehome"
